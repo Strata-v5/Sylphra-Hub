@@ -1163,6 +1163,19 @@ function library:AddWindow(title, options)
 						return label
 					end
 
+tab_data:AddNeLabel(label_text) -- [Label]
+						label_text = tostring(label_text or "New Label")
+
+						local nelabel = Prefabs:FindFirstChild("NeLabel"):Clone()
+
+						nelabel.Parent = new_tab
+						nelabel.Text = nelabel_text
+						nelabel.Size = UDim2.new(0, gNameLen(label), 0, 20)
+						nelabel.ZIndex = nelabel.ZIndex + (windows * 10)
+
+						return nelabel
+					end
+
 					function tab_data:AddButton(button_text, callback) -- [Button]
 						button_text = tostring(button_text or "New Button")
 						callback = typeof(callback) == "function" and callback or function()end
