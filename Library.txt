@@ -13,6 +13,7 @@ end
 local imgui = Instance.new("ScreenGui")
 local Prefabs = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
+local NeLabel = Instance.new("TextLabel")
 local Window = Instance.new("ImageLabel")
 local Resizer = Instance.new("Frame")
 local Bar = Instance.new("Frame")
@@ -103,6 +104,17 @@ Label.Text = "Hello, world 123"
 Label.TextColor3 = Color3.new(1, 1, 1)
 Label.TextSize = 14
 Label.TextXAlignment = Enum.TextXAlignment.Left
+
+NeLabel.Name = "NeLabel"
+NeLabel.Parent = Prefabs
+NeLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+NeLabel.BackgroundTransparency = 1
+NeLabel.Size = UDim2.new(0, 200, 0, 20)
+NeLabel.Font = Enum.Font.ComicSans
+NeLabel.Text = "Hello, world 123"
+NeLabel.TextColor3 = Color3.new(41, 4, 60)
+NeLabel.TextSize = 23
+NeLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 Window.Name = "Window"
 Window.Parent = Prefabs
