@@ -183,7 +183,7 @@ Title.Font = Enum.Font.LuckiestGuy
 Title.Text = "Gamer Time"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.TextSize = 14
-Title.TextXAlignment = Enum.TextXAlignment.Right
+Title.TextXAlignment = Enum.TextXAlignment.Center
 
 TabSelection.Name = "TabSelection"
 TabSelection.Parent = Window
